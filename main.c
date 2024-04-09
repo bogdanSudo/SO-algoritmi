@@ -157,12 +157,14 @@ int main() {
         printf("Ordinea proceselor in FCFS\n");
         getFinishingTime(procs, nrProcs);
         getProcs(procs, nrProcs);
+        printf("Timpul mediu de exec = %d\n", getAvgExecTime(procs,nrProcs));
     }
     else if (whichAlgorithm == 2) {
         printf("Ordinea proceselor in SJF\n");
         sortSJF(procs, nrProcs);
         getFinishingTime(procs, nrProcs);
         getProcs(procs, nrProcs);
+        printf("Timpul mediu de exec = %d\n", getAvgExecTime(procs,nrProcs));
     }
     else if(whichAlgorithm == 3) {
         printf("Ordinea proceselor in Round-Robin\n");
